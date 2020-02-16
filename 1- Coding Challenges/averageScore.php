@@ -14,17 +14,22 @@
 
     const arrSum = john.reduce((a,b) => a + b, 0);
     const arrSum2 = mike.reduce((a,b) => a + b, 0);
+    const arrSum3 = mary.reduce((a,b) => a + b, 0);
 
-    if(arrSum > arrSum2 ){
+    if(arrSum > arrSum2 && arrSUM > arrSum3){
 
         console.log("John has the highest average score with " + arrSum);
         
-    }else if(arrSum < arrSum2){
+    }else if(arrSum < arrSum2 && arrSum2 > arrSum3){
 
         console.log("Mike has the highest avarage score with " + arrSum2);
         
+    }else if(arrSum3 > arrSum && arrSum3 > arrSum2){
+
+        console.log("Mary has the highest avarage score with " + arrSum3);
+        
     }else{
-        console.log("Its a draw both teams have the same average scores with John at " + arrSum + " and Mike at " + arrSum2);
+        console.log("Its a draw all teams have the same average scores with John at " + arrSum + " and Mike at " + arrSum2 + " and Mary at " + arrSum3);
     }
     
     </script>
